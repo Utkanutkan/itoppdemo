@@ -96,15 +96,22 @@ Part creations is done through createTRU transaction. This is coupled to manufac
 
 ### Use Case 1: Back-to-Birth Trace
 
+You can see the trace of the TRU6 for the M&R organization. It includes every operation the part has gone through from naufacturing.
+
+
 
 ### Use Case 2: Dispute Resolution through Consistent/Trusted Common Trace
+
+The trace data for TRU6 for M&R and the supplier is shown respectively. So the supplier trace is the same as the trace of M&R organization accept the latest operations. The supplier can see the exact problem as reported as dispute and take action. 
+
 
 
 ### Use Case 3: Access Controlled Trace Data
 
+The trace data can be modified by the owner organization and not the others. Upon shipping, only getOWN transaction can be called first. After this trace data is owned and modified by the current owner only.
 
-### Potential Use Case: Tracking, Payment Notice and Performance Metrics
 
+### Potential Use Case: Tracking, Payment Notice 
 
 
 
