@@ -11,7 +11,7 @@ The installation instructions are tested on Ubuntu 20.04 LTS with a configuratio
 ```
 ## Installation
 
-You should install Hyperledger Fabric 1.4.4 first. The detailed installation instructions for this is given in Fabric page. After installing the fabric you need to run a simple network and install the standartparts smart contract.
+The prototype uses the Hyperledger Fabric 1.4 (https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
 
 ```markdown
 
@@ -49,8 +49,37 @@ The client web applicaiton is built and started.
 
 ```
 
-##
+## The Scenario
 
+### Organizations
+
+The network conssists of a manufacturer, third party logistics companies(3PL), distributer and maintanence&repair(M&R) organization. 
+
+Manufacturer: Manufacturer is an OEM that produces parts for the market. When the parts are produced, the GTIN is recorded that includes the manufacturer ID.
+
+Distributor: Distributor gets parts from the market, mostly manufacutrers, and sells them to the other parties.
+
+3PL: 3PLs also buys and sells the parts. Additionally they can perform maintenance work on the parts and install them.
+
+M&R: M&R organizations installs parts on the aerospace systems.
+
+As new organizations are added thay are included in the blockchain and assigned a unique ORGID. Organizations may have certificates.
+
+### Traceable REsource Unit (TRU)
+
+Each traceable part grouping is called a Traceable Resource Unit(TRU) and identifiable by a unique id(TRUID) assigned in the blockchain. 
+
+The history of TRU is stored in the TRACE entries. TRACE entries are stored per TRU and organization.
+
+The transactions modify the TRU and TRACE entries.
+
+### Create Part 
+
+Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. As a manufacturer completes the process, he creates the part in the blockchain by assigning necessary details.
+
+
+
+### 
 
 ```markdown
 Syntax highlighted code block
