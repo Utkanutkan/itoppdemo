@@ -51,6 +51,9 @@ The client web applicaiton is built and started.
 
 ## The Scenario
 
+The scenario is run on a presinstalled tracegui, traceapp and blockchain. tracegui is cloud hosted and accessed through [itopp.nl/ORGID](itopp.nl/ORG1). The api can be accessed through [partsledger.tk/transactionname](partsledger.tk/queryAllTRU).
+
+
 ### Organizations
 
 The network conssists of a manufacturer, third party logistics companies(3PL), distributer and maintanence&repair(M&R) organization. 
@@ -119,10 +122,7 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Utkanutkan/itoppdemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
+## Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
