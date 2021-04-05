@@ -2,16 +2,16 @@
 
 ## Introduction
 
-This is the repository for traceability blockchain prototype demonstration. This repository includes three different folder. Tracegui includes the tracegui application, traceapp includes the traceapi and trace conctract, external includes the external to access the traceapi from another client.
+This is the repository for traceability blockchain prototype. This repository includes three compoenents. Tracegui includes the tracegui application, traceapp includes the traceapi and trace conctract, external includes the code to access the traceapi from another client.
 
-The installation instructions are tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. 
+The installations were tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. 
 
 ```markdown
 
 ```
 ## Installation
 
-The prototype uses the Hyperledger Fabric 1.4 (https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
+The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
 
 ```markdown
 
@@ -73,13 +73,39 @@ The history of TRU is stored in the TRACE entries. TRACE entries are stored per 
 
 The transactions modify the TRU and TRACE entries.
 
+
+### The User Interface 
+
+
 ### Create Part 
 
 Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. As a manufacturer completes the process, he creates the part in the blockchain by assigning necessary details.
 
 
+### Part Operations (updateTRU, splitTRU) 
 
-### 
+
+### Ownership Change (QR code, shipTRU, changeOWN)
+
+
+### Dispute Resolution (CreateDispute, RespondDispute, closeDispute)
+
+
+### Use Case 1: Back-to-Birth Trace
+
+
+### Use Case 2: Dispute Resolution through Consistent/Trusted Common Trace
+
+
+### Use Case 3: Access Controlled Trace Data
+
+
+### Potential Use Case: Tracking, Payment Notice and Performance Metrics
+
+
+
+
+
 
 ```markdown
 Syntax highlighted code block
