@@ -1,25 +1,61 @@
-## Welcome to GitHub Pages
+# Welcome to Traceability Blockchain Prototype
 
-You can use the [editor on GitHub](https://github.com/Utkanutkan/itoppdemo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is the repository for traceability blockchain prototype demonstration. This repository includes three different folder. Tracegui includes the tracegui application, traceapp includes the traceapi and trace conctract, external includes the external to access the traceapi from another client.
 
-### Markdown
+The installation instructions are tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```markdown
+
+```
+## Installation
+
+You should install Hyperledger Fabric 1.4.4 first. The detailed installation instructions for this is given in Fabric page. After installing the fabric you need to run a simple network and install the standartparts smart contract.
+
+```markdown
+
+```
+
+After installing the fabric you need to start the first network from fabric samples. 
+```markdown
+
+```
+The standard parts contract should be started afterwards.
+
+
+## Prototype Architecture, starting traceapi and tracegui
+The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
+
+The api files are copied to a folder. Node files are built and api server is started.
+
+```markdown
+
+```
+
+The client gui is also coped to folder in the aerver machine. The configuration of the api should be present in the client gui.
+
+```markdown
+
+```
+The client web applicaiton is built and started. 
+
+```markdown
+
+```
+.Finally check the application from the you browser. The initial three parts that ecist in the initial contract can be seen/
+
+```markdown
+
+```
+
+##
+
 
 ```markdown
 Syntax highlighted code block
 
-# 1. Installation
-## 2. Traceability Blockchain
-### 3. Scenario
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
