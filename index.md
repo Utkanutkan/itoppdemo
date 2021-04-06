@@ -14,14 +14,43 @@ The installations were tested on Ubuntu 20.04 LTS with a configuration of 2 GB R
 The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
 
 ```markdown
-
+sudo apt install curl
+sudo apt  -get -y install docker compose
+sudo usermod -aG docker $USER
 ```
+Restart and login again after docker installation. 
 
-After installing the fabric you need to start the first network from fabric samples. 
 ```markdown
-
+sudo apt install curl
+sudo apt  -get -y install docker compose
+sudo usermod -aG docker $USER
 ```
-The standard parts contract should be started afterwards.
+The go programming language is installed and path variable is updated.
+```markdown
+wget -c https://dl.google.com/go/go1.12.17.linux-amd64.tar.gz -O - | sudo tar -xzf
+export GOPATH=$HOME/go
+```
+Node.js version 8.9 to be installed as recommended. 
+
+```markdown
+curl -sL https://deb.nodesource.com/setup_8.9 -o nodesource_setup.sh
+```
+
+If you are using older version of linux such as 16.04 install python.
+
+```markdown
+sudo apt-get install python
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+```
+Check the versions of the prerequests.
+```markdown
+docker -v
+docker-compose -v
+node -v
+npm -v
+```
+
 
 
 ## Prototype Architecture, starting traceapi and tracegui
