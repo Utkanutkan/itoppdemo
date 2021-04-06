@@ -49,8 +49,19 @@ go version
 node -v
 npm -v
 ```
+Get the image of the fabric.
 
+Copy the smart contract from the repository.
 
+Start the network.
+
+Copy the server files.
+
+Start the server application.
+
+Copy the client files.
+
+Start the client application.
 
 ## Prototype Architecture, starting traceapi and tracegui
 The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
