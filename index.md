@@ -91,11 +91,16 @@ Distributor: Distributor gets parts from the market, mostly manufacutrers, and s
 
 3PL: 3PLs also buys and sells the parts. Additionally they can perform maintenance work on the parts and install them.
 
-M&R: M&R organizations installs parts on the aerospace systems.
+MRO: MRO organizations installs parts on the aerospace systems.
 
-As new organizations are added thay are included in the blockchain and assigned a unique ORGID. Organizations may have certificates.
+As new organizations are added thay are included in the blockchain and assigned a unique ORGID. Organizations have certificates.
 
-### Traceable REsource Unit (TRU)
+For the tutorial example, we work on a network with six organizations.
+
+![image](/assets/images/blockchainorgs.jpg)
+
+
+### Traceable Resource Unit (TRU)
 
 Each traceable part grouping is called a Traceable Resource Unit(TRU) and identifiable by a unique id(TRUID) assigned in the blockchain. 
 
