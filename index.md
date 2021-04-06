@@ -4,11 +4,9 @@
 
 This is the repository for traceability blockchain prototype. This repository includes three compoenents. Tracegui includes the tracegui application, traceapp includes the traceapi and trace conctract, external includes the code to access the traceapi from another client.
 
-The installations were tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. 
+The installations were tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. It is recommended to start with a fresh instalallation of Ubuntu 20.04 LTS.
 
-```markdown
 
-```
 ## Installation
 
 The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
