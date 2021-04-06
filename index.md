@@ -146,7 +146,7 @@ The trace data for TRU6 for M&R and the supplier is shown respectively. So the s
 The trace data can be modified by the owner organization and not the others. Upon shipping, only getOWN transaction can be called first. After this trace data is owned and modified by the current owner only.
 
 
-### Potential Use Case: Tracking, Payment Notice 
+### Use Case 4: Payment Notice 
 
 
 
