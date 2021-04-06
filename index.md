@@ -98,8 +98,10 @@ As new organizations are added thay are included in the blockchain and assigned 
 
 For the tutorial example, we work on a network with six organizations.
 
-![image](/assets/images/blockchainorgs.jpg)
 
+```markdown
+![image](/assets/images/blockchainorgs.jpg)
+```
 
 ### Traceable Resource Unit (TRU)
 
