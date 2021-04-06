@@ -45,6 +45,7 @@ Check the versions of the prerequests.
 ```markdown
 docker -v
 docker-compose -v
+go version
 node -v
 npm -v
 ```
