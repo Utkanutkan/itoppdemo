@@ -120,11 +120,13 @@ For the tutorial example, we work on a network with six organizations.
 
 ### Traceable Resource Unit (TRU)
 
-Each traceable part grouping is called a Traceable Resource Unit(TRU) and identifiable by a unique id(TRUID) assigned in the blockchain. 
+Each traceable part grouping is called a Traceable Resource Unit(TRU) and identifiable by a unique id(TRUID) assigned in the blockchain. The summary of the data tables and relations can be explained as follows:
 
-The history of TRU is stored in the TRACE entries. TRACE entries are stored per TRU and organization.
+-Each TRU is unique and corresponds to physical batch. TRU information can be aupdated by the owner organization.
+-The history of changes of TRU information is stored in the TRACE entries. The organizations can only update the TRACE information for the TRU they own.
+-When TRU is shipped, the change of ownership is allowed. The new owner can get the ownership. The old TRACE is copied to new owner. 
 
-The transactions modify the TRU and TRACE entries.
+The TRU and TRACE data fields are provided below.
 
 ```markdown
 ![image](/assets/images/truandtrace.jpg)
