@@ -48,25 +48,15 @@ go version
 node -v
 npm -v
 ```
-Get the image of the fabric.
+Finall step is downloading the Hyperledger Fabric 1.4 and samples.
+```markdown
 
-
-Copy the smart contract from the repository.
-
-Start the network.
-
-Copy the server files.
-
-Start the server application.
-
-Copy the client files.
-
-Start the client application.
+```
 
 ## Prototype Architecture, starting traceapi and tracegui
 The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
 
-1. Download and run the blockchain network and.
+1. Run the blockchain network and.
 2. Run the api server.
 3. Run the client application.
 
