@@ -2,10 +2,9 @@
 
 ## Introduction
 
-This is the repository for traceability blockchain prototype. This repository includes three compoenents. Tracegui includes the tracegui application, traceapp includes the traceapi and trace conctract, external includes the code to access the traceapi from another client.
+This is the repository for traceability blockchain prototype. The repository has three folders. Tracegui includes the tracegui application, traceapp includes the traceapi and standardparts contract, external includes the code to access the traceapi from another client.
 
-The installations were tested on Ubuntu 20.04 LTS with a configuration of 2 GB RAM. It is recommended to start with a fresh instalallation of Ubuntu 20.04 LTS.
-
+The installations were tested on Ubuntu server 20.04 with a configuration of 2 GB RAM. It is recommended to start with a fresh instalallation.
 
 ## Installation
 
@@ -66,18 +65,27 @@ Start the client application.
 ## Prototype Architecture, starting traceapi and tracegui
 The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
 
-The api files are copied to a folder. Node files are built and api server is started.
+1. Run the existing blockchain network.
+2. Run the api server.
+3. Run the client application.
+
+
+
+
+First the API files are copied to your machine. In the server directory first the npm is intalled and server is run. 
 
 ```markdown
-
+npm install
+npm start
 ```
 
-The client gui is also coped to folder in the aerver machine. The configuration of the api should be present in the client gui.
+The client gui is also coped to folder in the aerver machine. The configuration of the api should be present in the client gui. The client web applicaiton is built and started. 
 
 ```markdown
-
+npm install
+nnpm run serve
 ```
-The client web applicaiton is built and started. 
+
 
 ```markdown
 
