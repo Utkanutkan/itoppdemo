@@ -90,7 +90,7 @@ The client web applicaiton is built and started.
 
 ## The Scenario
 
-The scenario is run on a presinstalled tracegui, traceapp and blockchain. tracegui is cloud hosted and accessed through [itopp.nl/ORGID](itopp.nl/ORG1). The api can be accessed through [partsledger.tk/transactionname](partsledger.tk/queryAllTRU).
+The scenario is run on a presinstalled tracegui, traceapp and blockchain[itopp.nl/ORGID](itopp.nl/ORG1). See external access for calling api from python by connecting server [partsledger.tk/transactionname](partsledger.tk/queryAllTRU).
 
 
 ### Organizations
@@ -122,13 +122,16 @@ The history of TRU is stored in the TRACE entries. TRACE entries are stored per 
 
 The transactions modify the TRU and TRACE entries.
 
+```markdown
+![image](/assets/images/truandtrace.jpg)
+```
 
 ### The User Interface 
 
 
 ### Create Part 
 
-Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. As a manufacturer completes the process, he creates the part in the blockchain by assigning necessary details.
+Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting 
 
 
 ### Part Operations (updateTRU, splitTRU) 
@@ -174,6 +177,11 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+
+## Summary of Transactions
+
+![image](/assets/images/transactions.jpg)
 
 
 ## Support or Contact
