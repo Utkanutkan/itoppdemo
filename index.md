@@ -131,13 +131,42 @@ The TRU and TRACE data fields are provided below.
 ```markdown
 ![image](/assets/images/truandtrace.jpg)
 ```
+For eaxmple a TRU can be produced by a manufacturer 
+
+```markdown
+![image](/assets/images/truandtrace.jpg)
+```
+
 
 ### The User Interface 
 
+Two main screens exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The Specific functions on each screen is listed below.
+
+1: 
+2: 
+3: 
+4: 
+5:
+6: 
+7: 
 
 ### Create Part 
 
-Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting 
+```markdown
+![image](/assets/images/truandtrace.jpg)
+```
+For eaxmple a TRU can be produced by a manufacturer 
+
+```markdown
+![image](/assets/images/truandtrace.jpg)
+```
+
+
+Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting the transaction.
+
+```markdown
+![image](/assets/images/truandtrace.jpg)
+```
 
 
 ### Part Operations (updateTRU, splitTRU) 
