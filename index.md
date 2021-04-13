@@ -61,7 +61,7 @@ The traceapi is a node.js application. Ideally every organization runs a copy of
 3. Run the client application.
 
 
-For running the blockchain network the first-network example is used as a baseline. The standard contract is updated with standardparts(SPgolang.go). First download the fabric samples. Update copy the file to the directory. Update the installation script.
+For running the blockchain network the first-network example is used as a baseline. The  contract is updated with standardparts(SPgolang.go). Download the fabric samples. Update the contract file in the contract directory. Then update the installation script to run the file.
 
 ```markdown
 npm install
@@ -140,15 +140,21 @@ For eaxmple a TRU can be produced by a manufacturer
 
 ### The User Interface 
 
-Two main screens exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The Specific functions on each screen is listed below.
+Two main screens exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The specific functions on each screen is listed below. 
 
-1: 
-2: 
-3: 
-4: 
-5:
-6: 
-7: 
+ ```markdown
+![image](/assets/images/list.jpg)
+```
+By clicking trace one can enter the trace interface.
+
+```markdown
+![image](/assets/images/trace.jpg)
+```
+
+
+```markdown
+ 
+ ```
 
 ### Create Part 
 
