@@ -208,8 +208,6 @@ Dispute transaction is used for dispute management.
 
 
 
-### Dispute Resolution (CreateDispute, RespondDispute, closeDispute)
-
 
 ### Use Case 1: Back-to-Birth Trace
 
@@ -247,7 +245,9 @@ Syntax highlighted code block
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
-## Summary of Transactions
+### API Requests
+
+Examples of web api requests are provided for each operation.
 
 ![image](/assets/images/transactions.jpg)
 
