@@ -137,9 +137,9 @@ The TRU and TRACE data tables is provided below.
 
 Two main screens exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The specific functions on each screen is listed below. 
 
- ```markdown
+
 ![image](/assets/images/list.jpg)
-```
+
 By clicking trace one can enter the trace interface.
 
 ```markdown
