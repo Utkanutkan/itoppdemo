@@ -1,1 +1,1 @@
-This repositorys is for the demonstration of itopp prototype.
+This repository is for the storage of itopp prototype documentation.
