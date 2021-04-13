@@ -33,7 +33,7 @@ Node.js version 8.9 to be installed as recommended.
 curl -sL https://deb.nodesource.com/setup_8.9 -o nodesource_setup.sh
 ```
 
-If you are using older version of linux such as 16.04 install python.
+If you are using older version of linux such as 16.04, then install python 2.7.
 
 ```markdown
 sudo apt-get install python
