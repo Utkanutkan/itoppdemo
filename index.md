@@ -2,13 +2,14 @@
 
 ## Introduction
 
-This is the repository for traceability blockchain prototype. The repository has three folders. Tracegui includes the tracegui application, traceapp includes the traceapi and standardparts contract, external includes the code to access the traceapi from another client.
+This is the repository for traceability blockchain prototype. The repository has four folders. Tracegui includes the tracegui application, traceapp includes the traceapi, the contract has the standardparts contract, external includes the code to access the traceapi from another client.
 
 The installations were tested on Ubuntu server 20.04 with a configuration of 2 GB RAM. It is recommended to start with a fresh instalallation.
 
 ## Installation
 
-The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). After installing the fabric you need to run first network and install the standartparts smart contract.
+The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). First prerequisites, curl, go, docker, node.js and python to be installed.
+
 
 ```markdown
 sudo apt install curl
@@ -48,13 +49,14 @@ go version
 node -v
 npm -v
 ```
+After installing the fabric you need to run first network and install the standartparts smart contract.
 Finall step is downloading the Hyperledger Fabric 1.4 and samples.
 ```markdown
 
 ```
 
-## Prototype Architecture, starting traceapi and tracegui
-The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
+## Prototype Architecture
+The prototype has three main components. The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
 
 1. Run the blockchain network and.
 2. Run the api server.
