@@ -144,15 +144,15 @@ By clicking trace one can enter the trace interface.
 
 ![image](/assets/images/trace.jpg)
 
-TRU can be produced by a manufacturer. After production it is registered to blockchain.  
+
+We can further explain each operation. TRU can be produced by a manufacturer. After production it is registered to blockchain.  
 
 ![image](/assets/images/create.jpg)
 
-
-Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting the transaction.
+Part creation is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting the transaction.
 
 ```markdown
-![image](/assets/images/truandtrace.jpg)
+![image](/assets/images/createdialog.jpg)
 ```
 
 **Operations on Parts as Transactions**
