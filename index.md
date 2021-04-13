@@ -158,21 +158,31 @@ Part creations is done through createTRU transaction. This is coupled to manufac
 ```
 
 
-** Operations on Parts as Transactions and (updateTRU, splitTRU) **
+** Operations on Parts as Transactions **
 
-* Internal Operations *
+*Internal Operations*
 
-TRU
+Internal operations are provided by the TRU owner organization.
 
 ![image](/assets/images/create.jpg)
 
+A TRU can be created with the GTIN(producer-productnumber combination), quantitry, CoC and batchnumber combination.
+
 ![image](/assets/images/maintenance.jpg)
+
+If TRU is maintained the appropriate CoC is appended with the maintenance CoC.
 
 ![image](/assets/images/update.jpg)
 
+If TRU is used the quantity of TRU is updated.
+
 ![image](/assets/images/use.jpg)
 
+If TRU is used the quantity of TRU is updated.
+
 ![image](/assets/images/split.jpg)
+
+The TRU batch can be splitted as to provide different destinations for each batch. The quantity of the new batch is specified. 
 
 *Boundary Operations*
 
@@ -191,11 +201,12 @@ When a part is shipped, following operations are performed.
 
 3. The buyer scans the QR code. The trace is displayed and link to ownership change transaction.
 
+![image](/assets/images/newownertrace.jpg)
 
 
 4. The buyer confirms terms and ownership change. TRU is updated and a new set of trace entries are created for the buyer.
 
-
+![image](/assets/images/newowneraccptance.jpg)
 
 
 Dispute
@@ -252,6 +263,6 @@ Examples of web api requests are provided for each operation.
 ![image](/assets/images/transactions.jpg)
 
 
-## Support or Contact
+## Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
