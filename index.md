@@ -145,25 +145,19 @@ By clicking trace one can enter the trace interface.
 ![image](/assets/images/trace.jpg)
 
 
-We can further explain each operation. TRU can be produced by a manufacturer. After production it is registered to blockchain.  
-
-![image](/assets/images/create.jpg)
-
-Part creation is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting the transaction.
-
-```markdown
-![image](/assets/images/createdialog.jpg)
-```
+We can further explain each operation in the next section. 
 
 **Operations on Parts as Transactions**
 
-*Internal Operations*
-
-Internal operations are provided by the TRU owner organization.
+*Creation*
+TRU can be produced and registered ideally by a manufacturer. After manufacturing and testing, it is registered to blockchain.  A TRU can be created with the GTIN(producer-productnumber combination), quantitry, CoC and batchnumber combination.
 
 ![image](/assets/images/create.jpg)
 
-A TRU can be created with the GTIN(producer-productnumber combination), quantitry, CoC and batchnumber combination.
+
+*Internal Operations*
+
+Internal operations are provided by the owner of the TRU.
 
 ![image](/assets/images/maintenance.jpg)
 
@@ -206,7 +200,7 @@ When a part is shipped, following operations are performed.
 ![image](/assets/images/newowneraccptance.jpg)
 
 
-*Dispute Operations*
+*Dispute Management*
 
 Dispute transaction is used for dispute management. 
 
@@ -224,20 +218,15 @@ You can see the trace of the TRU6 for the M&R organization. It includes every op
 
 The trace data for TRU6 for 3PL and MRO  trace  is shown respectively. So the 3PL trace is the same as the trace of MRO organization accept the latest operations done by the lates owner. Every organization in the blockchain has a consistent view of the trace.
 
-
 Whenever a dispute is started by an organization, the counter party has the same view of the disputed information as dispute party. 
-
-
 
 ### Use Case 3: Access Controlled Trace Data
 
 The trace data can be modified by the owner organization and not the others. Upon shipping, only getOWN transaction can be called first. After this trace data is owned and modified by the current owner only. 
 
-
 ### Use Case 4: Payment Notice 
 
 The payment period starts as soon as the ownership of a TRU is assumed. 
-
 
 This has additional use cases such as:
 
