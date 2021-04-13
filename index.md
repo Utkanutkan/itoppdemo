@@ -241,7 +241,7 @@ The payment period starts as soon as the ownership of a TRU is assumed.
 
 This has additional use cases such as:
 
-1. Payment date can be reminded by an event to the current owner.
+1. Payment date can be reminded by an event sent to the current owner.
 
 2. The owner may be limited to internal transactions or ship transactions if the payment terms are not met. 
 
