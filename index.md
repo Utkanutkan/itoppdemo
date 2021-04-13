@@ -133,18 +133,17 @@ The TRU and TRACE data tables is provided below.
 ```
 
 
-### The User Interface 
+### Interacting with the Blockchain: User Interface and API
 
-Two main screens exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The specific functions on each screen is listed below. 
+The user can submit transactions either through user interface or through API. Use interface provides user a contextual view of the information. The user interface calls the same API.
 
+In the context of single organization two main interfaces exist in the interface. One for listing the TRUs in the system and one for listing the TRACE of a particular TRU. The specific functions on each screen is listed below. Each transaction is explained further in the transactions sections.
 
 ![image](/assets/images/list.jpg)
 
 By clicking trace one can enter the trace interface.
 
 ![image](/assets/images/trace.jpg)
-
-Create Part 
 
 TRU can be produced by a manufacturer. After production it is registered to blockchain.  
 
@@ -222,23 +221,40 @@ Dispute transaction is used for dispute management.
 
 ### Use Case 1: Back-to-Birth Trace
 
-You can see the trace of the TRU6 for the M&R organization. It includes every operation the part has gone through from naufacturing.
+You can see the trace of the TRU6 for the M&R organization. It includes every operation the part has gone through from naufacturing. THe TRUIDs and GTINs are preserved through the trace. The CoC informations is only appended.
 
 
 
 ### Use Case 2: Dispute Resolution through Consistent/Trusted Common Trace
 
-The trace data for TRU6 for M&R and the supplier is shown respectively. So the supplier trace is the same as the trace of M&R organization accept the latest operations. The supplier can see the exact problem as reported as dispute and take action. 
+The trace data for TRU6 for 3PL and MRO  trace  is shown respectively. So the 3PL trace is the same as the trace of MRO organization accept the latest operations done by the lates owner. Every organization in the blockchain has a consistent view of the trace.
+
+
+Whenever a dispute is started by an organization, the counter party has the same view of the disputed information as dispute party. 
 
 
 
 ### Use Case 3: Access Controlled Trace Data
 
-The trace data can be modified by the owner organization and not the others. Upon shipping, only getOWN transaction can be called first. After this trace data is owned and modified by the current owner only.
+The trace data can be modified by the owner organization and not the others. Upon shipping, only getOWN transaction can be called first. After this trace data is owned and modified by the current owner only. 
 
 
 ### Use Case 4: Payment Notice 
 
+The payment period starts as soon as the ownership of a TRU is assumed. 
+
+
+
+
+This has additional use cases such as:
+
+1. Payment date can be reminded by an event to the current owner.
+
+2. The owner may be limited to internal transactions or ship transactions if the payment terms are not met. 
+
+3. Payment performance of the buyer can be precisely evaluated as it is done at the delivery.
+
+4. The payment can be automated by another smart contract.
 
 
 ### API Requests
