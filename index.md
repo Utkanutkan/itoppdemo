@@ -8,7 +8,7 @@ The installations were tested on Ubuntu server 20.04 with a configuration of 2 G
 
 ## Installation
 
-The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). First prerequisites, curl, go, docker, node.js and python to be installed.
+The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). First prerequisites, curl, docker, go, node.js and python to be installed.
 
 
 ```markdown
@@ -18,12 +18,8 @@ sudo usermod -aG docker $USER
 ```
 Restart and login again after docker installation. 
 
-```markdown
-sudo apt install curl
-sudo apt  -get -y install docker compose
-sudo usermod -aG docker $USER
-```
 The go programming language is installed and path variable is updated.
+
 ```markdown
 wget -c https://dl.google.com/go/go1.12.17.linux-amd64.tar.gz -O - | sudo tar -xzf
 export GOPATH=$HOME/go
@@ -42,6 +38,7 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs
 ```
 Check the versions of the prerequests.
+
 ```markdown
 docker -v
 docker-compose -v
@@ -49,8 +46,10 @@ go version
 node -v
 npm -v
 ```
+
 After installing the fabric you need to run first network and install the standartparts smart contract.
 Finall step is downloading the Hyperledger Fabric 1.4 and samples.
+
 ```markdown
 
 ```
@@ -58,7 +57,7 @@ Finall step is downloading the Hyperledger Fabric 1.4 and samples.
 ## Prototype Architecture
 The prototype has three main components. The traceapi is a node.js application. Ideally every organization runs a copy of their api. The blockchain api uses wallet and blockchain network configuration to access the blockchain. In the current configuration organizational wallet is included in the api. The tracegui is a vuetify application and calls the api functions.
 
-1. Run the blockchain network and.
+1. Run the blockchain network and install the standard parts contract.
 2. Run the api server.
 3. Run the client application.
 
@@ -81,14 +80,13 @@ The client gui is also coped to folder in the aerver machine. The configuration 
 
 ```markdown
 npm install
-nnpm run serve
+npm run serve
 ```
-
 
 ```markdown
 
 ```
-Finally check the application from the you browser. The initial three parts that ecist in the initial contract can be seen/
+Finally check the application from the you browser. The initial three parts that exist in the initial contract can be observed.
 
 ```markdown
 
@@ -134,8 +132,7 @@ The TRU and TRACE data tables is provided below.
 ![image](/assets/images/truandtrace.jpg)
 ```
 
-
-### Interacting with the Blockchain: User Interface and API
+### Interacting with the Blockchain: User Interface, API and Transactions
 
 The user can submit transactions either through user interface or through API. Use interface provides user a contextual view of the information. The user interface calls the same API.
 
@@ -158,8 +155,7 @@ Part creations is done through createTRU transaction. This is coupled to manufac
 ![image](/assets/images/truandtrace.jpg)
 ```
 
-
-** Operations on Parts as Transactions **
+**Operations on Parts as Transactions**
 
 *Internal Operations*
 
@@ -210,7 +206,7 @@ When a part is shipped, following operations are performed.
 ![image](/assets/images/newowneraccptance.jpg)
 
 
-Dispute
+*Dispute Operations*
 
 Dispute transaction is used for dispute management. 
 
@@ -219,12 +215,9 @@ Dispute transaction is used for dispute management.
 ![image](/assets/images/respond.jpg)
 
 
-
-
 ### Use Case 1: Back-to-Birth Trace
 
 You can see the trace of the TRU6 for the M&R organization. It includes every operation the part has gone through from naufacturing. THe TRUIDs and GTINs are preserved through the trace. The CoC informations is only appended.
-
 
 
 ### Use Case 2: Dispute Resolution through Consistent/Trusted Common Trace
@@ -244,8 +237,6 @@ The trace data can be modified by the owner organization and not the others. Upo
 ### Use Case 4: Payment Notice 
 
 The payment period starts as soon as the ownership of a TRU is assumed. 
-
-
 
 
 This has additional use cases such as:
