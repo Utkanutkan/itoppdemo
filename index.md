@@ -241,21 +241,6 @@ The trace data can be modified by the owner organization and not the others. Upo
 
 
 
-
-
-```markdown
-Syntax highlighted code block
-
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
 ### API Requests
 
 Examples of web api requests are provided for each operation.
