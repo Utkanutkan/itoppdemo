@@ -86,7 +86,7 @@ nnpm run serve
 ```markdown
 
 ```
-.Finally check the application from the you browser. The initial three parts that ecist in the initial contract can be seen/
+Finally check the application from the you browser. The initial three parts that ecist in the initial contract can be seen/
 
 ```markdown
 
@@ -142,25 +142,17 @@ Two main screens exist in the interface. One for listing the TRUs in the system 
 
 By clicking trace one can enter the trace interface.
 
-```markdown
+
 ![image](/assets/images/trace.jpg)
-```
 
 
-```markdown
- 
- ```
 
-### Create Part 
 
-```markdown
+Create Part 
+
+TRU can be produced by a manufacturer. After production it is registered to blockchain.  
+
 ![image](/assets/images/create.jpg)
-```
-For eaxmple a TRU can be produced by a manufacturer 
-
-```markdown
-
-```
 
 
 Part creations is done through createTRU transaction. This is coupled to manufacturing and testing of the TRU. After manufacturer completes the manufacturing,  cre in the blockchain by submitting the transaction.
@@ -171,6 +163,35 @@ Part creations is done through createTRU transaction. This is coupled to manufac
 
 
 ### Part Operations (updateTRU, splitTRU) 
+
+Internal Operations
+
+![image](/assets/images/create.jpg)
+
+![image](/assets/images/maintenance.jpg)
+
+![image](/assets/images/update.jpg)
+
+![image](/assets/images/use.jpg)
+
+![image](/assets/images/split.jpg)
+
+Boundary Operations
+
+TRU ownership change by QR code.
+
+![image](/assets/images/ship.jpg)
+
+
+![image](/assets/images/ownership.jpg)
+
+
+Dispute
+
+![image](/assets/images/dispute.jpg)
+
+![image](/assets/images/respond.jpg)
+
 
 
 ### Ownership Change (QR code, shipTRU, changeOWN)
