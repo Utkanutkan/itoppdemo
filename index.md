@@ -142,11 +142,7 @@ Two main screens exist in the interface. One for listing the TRUs in the system 
 
 By clicking trace one can enter the trace interface.
 
-
 ![image](/assets/images/trace.jpg)
-
-
-
 
 Create Part 
 
@@ -162,9 +158,11 @@ Part creations is done through createTRU transaction. This is coupled to manufac
 ```
 
 
-### Part Operations (updateTRU, splitTRU) 
+** Operations on Parts as Transactions and (updateTRU, splitTRU) **
 
-Internal Operations
+* Internal Operations *
+
+TRU
 
 ![image](/assets/images/create.jpg)
 
@@ -176,25 +174,38 @@ Internal Operations
 
 ![image](/assets/images/split.jpg)
 
-Boundary Operations
+*Boundary Operations*
 
-TRU ownership change by QR code.
+Boundary operations are performed during the change of ownership of TRU. These are ship and changeownership operations. 
+
+When a part is shipped, following operations are performed.
+
+1. The buyer organization is selected and payment term is selected. This is done via ship transaction.
 
 ![image](/assets/images/ship.jpg)
 
+2. After the ship transaction is completed, a QR code is generated for the buyer to scan. This links to the page displaying trace and link to ownership change transaction.
 
-![image](/assets/images/ownership.jpg)
+![image](/assets/images/QR.jpg)
+
+
+3. The buyer scans the QR code. The trace is displayed and link to ownership change transaction.
+
+
+
+4. The buyer confirms terms and ownership change. TRU is updated and a new set of trace entries are created for the buyer.
+
+
 
 
 Dispute
+
+Dispute transaction is used for dispute management. 
 
 ![image](/assets/images/dispute.jpg)
 
 ![image](/assets/images/respond.jpg)
 
-
-
-### Ownership Change (QR code, shipTRU, changeOWN)
 
 
 ### Dispute Resolution (CreateDispute, RespondDispute, closeDispute)
