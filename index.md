@@ -126,12 +126,7 @@ Each traceable part grouping is called a Traceable Resource Unit(TRU) and identi
 -The history of changes of TRU information is stored in the TRACE entries. The organizations can only update the TRACE information for the TRU they own.
 -When TRU is shipped, the change of ownership is allowed. The new owner can get the ownership. The old TRACE is copied to new owner. 
 
-The TRU and TRACE data fields are provided below.
-
-```markdown
-![image](/assets/images/truandtrace.jpg)
-```
-For eaxmple a TRU can be produced by a manufacturer 
+The TRU and TRACE data tables is provided below.
 
 ```markdown
 ![image](/assets/images/truandtrace.jpg)
@@ -159,12 +154,12 @@ By clicking trace one can enter the trace interface.
 ### Create Part 
 
 ```markdown
-![image](/assets/images/truandtrace.jpg)
+![image](/assets/images/create.jpg)
 ```
 For eaxmple a TRU can be produced by a manufacturer 
 
 ```markdown
-![image](/assets/images/truandtrace.jpg)
+
 ```
 
 
