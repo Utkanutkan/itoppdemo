@@ -46,11 +46,36 @@ go version
 node -v
 npm -v
 ```
+It is advosed to define an alternative user account for running the blockchain application.
 
-After installing the fabric you need to run first network and install the standartparts smart contract.
+
+
 Final step is downloading the Hyperledger Fabric 1.4 and samples.
 
-Define a alternative user account for running the blockchain application.
+curl -sSL http://bit.ly/2ysbOFE | bash -s 1.4.11
+
+We will take the first network as a baseline and install standard parts contract on the network. Easiest way is to update the default *startfabric.sh*. 
+
+1. Update the chaincode directory and name.
+ 
+In line 17, update chaincode directory sparts.
+
+Create a directory in the chaincode folder named sparts and copy the standardparts contract to the directory. 
+
+```markdown
+CC_SRC_PATH=github.com/chaincode/sparts
+```
+In line 64,90 and 112 update chaincode name from fabcar to standardparts so that the chaincode is installed and instantiated.
+
+2. Use leveldb for performance optimization.
+
+```markdown
+echo y | ./byfn.sh up -a -n -s leveldb
+```
+
+3. If you want to add additional peers, create the cyrpto material, paste them and install the chaincode on these.
+
+
 
 
 
