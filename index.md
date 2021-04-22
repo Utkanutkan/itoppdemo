@@ -48,10 +48,16 @@ npm -v
 ```
 
 After installing the fabric you need to run first network and install the standartparts smart contract.
-Finall step is downloading the Hyperledger Fabric 1.4 and samples.
+Final step is downloading the Hyperledger Fabric 1.4 and samples.
+
+Define a alternative user account for running the blockchain application.
+
+
+
+If you are using default port for web requests (https) requests, sign in as root and enable node to access ports.
 
 ```markdown
-
+setcap 'cap_net_bind_service=+ep' /usr/bin/node
 ```
 
 ## Prototype Architecture
