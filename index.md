@@ -79,7 +79,7 @@ echo y | ./byfn.sh up -a -n -s leveldb
 
 
 
-If you are using default port for web requests (https) requests, sign in as root and enable node to access ports.
+If you are using default port for web requests (https), sign in as root and enable node to access to default ports(80 and 443).
 
 ```markdown
 setcap 'cap_net_bind_service=+ep' /usr/bin/node
