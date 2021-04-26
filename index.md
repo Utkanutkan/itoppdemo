@@ -11,18 +11,27 @@ The installations were tested on Ubuntu server 20.04 with a configuration of 2 G
 The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). First prerequisites, curl, docker, go, node.js and python to be installed.
 
 
+Update the ubuntu 20.04 
 ```markdown
+sudo apt-get update
 sudo apt install curl
-sudo apt  -get -y install docker compose
+```
+
+Ad user for traceability blockchain 
+```markdown
+sudo adduser buser
+```
+Login as buser abd install docker and docker-compose. Add the user to docker group.
+```markdown
+sudo apt-get -y install docker-compose
 sudo usermod -aG docker $USER
 ```
-Restart and login again after docker installation. 
-
 The go programming language is installed and path variable is updated.
 
 ```markdown
-wget -c https://dl.google.com/go/go1.12.17.linux-amd64.tar.gz -O - | sudo tar -xzf
+wget -c https://dl.google.com/go/go1.12.17.linux-amd64.tar.gz | sudo tar -xzf
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 ```
 Node.js version 8.9 to be installed as recommended. 
 
