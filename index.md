@@ -224,6 +224,9 @@ Boundary operations are performed during the change of ownership of TRU. These a
 
 When a part is shipped, following operations are performed.
 
+![image](/assets/images/handoverTRU.jpg)
+
+
 1. The buyer organization is selected and payment term is selected. This is done via ship transaction.
 
 ![image](/assets/images/ship.jpg)
