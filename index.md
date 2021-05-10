@@ -226,25 +226,10 @@ When a part is shipped, following operations are performed.
 
 ![image](/assets/images/handoverTRU.jpg)
 
-
 1. The buyer organization is selected and payment term is selected. This is done via ship transaction.
-
-![image](/assets/images/ship.jpg)
-
 2. After the ship transaction is completed, a QR code is generated for the buyer to scan. This links to the page displaying trace and link to ownership change transaction.
-
-![image](/assets/images/QR.jpg)
-
-
 3. The buyer scans the QR code. The trace is displayed and link to ownership change transaction.
-
-![image](/assets/images/newownertrace.jpg)
-
-
 4. The buyer confirms terms and ownership change. TRU is updated and a new set of trace entries are created for the buyer.
-
-![image](/assets/images/newowneraccptance.jpg)
-
 
 *Dispute Management*
 
