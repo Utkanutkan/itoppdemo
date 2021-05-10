@@ -274,7 +274,6 @@ This has additional use cases such as:
 
 Examples of web api requests are provided for each operation.
 
-![image](/assets/images/transactions.jpg)
 
 We provide sample code for aceesing blockchain from Python.
 
