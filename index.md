@@ -67,25 +67,27 @@ It is advised to define an alternative user account for running the blockchain a
 
 Final step is downloading the Hyperledger Fabric 1.4 and samples.
 
+```markdown
 curl -sSL http://bit.ly/2ysbOFE | bash -s 1.4.11
+```
 
-We will take the first network as a baseline and install standard parts contract on the network. Easiest way is to update the default *startfabric.sh*. 
+We will take the first network as a baseline and install standard parts contract on the network. Easiest way is to update the default *startfabric.sh* in the first network folder.
 
 1. Update the chaincode directory and name.
  
 In line 17, update chaincode directory sparts.
 
-Create a directory in the chaincode folder named sparts and copy the standardparts contract to the directory. 
+Create a directory in the chaincode folder named sparts and copy the SPgolangv4 contract to the directory. 
 
 ```markdown
 CC_SRC_PATH=github.com/chaincode/sparts
 ```
-In line 64,90 and 112 update chaincode name from fabcar to standardparts so that the chaincode is installed and instantiated.
+In line 64,90 and 112 update chaincode name from fabcar to SPgolangv4 so that the chaincode is installed and instantiated.
 
-2. Use leveldb for performance optimization.
+2. Use leveldb for performance optimization. Update line 46.
 
 ```markdown
-echo y | ./byfn.sh up -a -n -s leveldb
+echo y | ./byfn.sh up -a -n 
 ```
 
 3. If you want to add additional peers, create the cyrpto material, paste them and install the chaincode on these.
@@ -103,34 +105,34 @@ The prototype has three main components. The traceapi is a node.js application. 
 2. Run the api server.
 3. Run the client application.
 
-For running the blockchain network the first-network example is used as a baseline. The  contract is updated with standardparts(SPgolang.go). Download the fabric samples. Update the contract file in the contract directory. Then update the installation script to run the file.
+For running the blockchain network the first-network example is used as a baseline. The  contract is updated with standardparts(SPgolangv4.go). Do the installation steps, download the fabric samples, update the contract file in the contract directory and update the installation script *startfabric.sh*.
+
+First run the script to form the blockchain script. Then enroll the administrator for the first organization in the blockchain. After the enrollment copy the admin wallet configuration.
+
+```markdown
+./startfabric.sh up
+node enrolladmin.js
+```
+After the enrollment copy the admin wallet configuration. Update the wallet folder in the server directory of the application. The traceapp will use this credentials to access organization peer and call transactions.
+
+Now we can start the traceapp. Go to server directory and and start server.
 
 ```markdown
 npm install
 npm start
 ```
 
-First the API files are copied to your machine. In the server directory first the npm is intalled and server is run. 
-
-```markdown
-npm install
-npm start
-```
-
-The client gui is also coped to folder in the aerver machine. The configuration of the api should be present in the client gui. The client web applicaiton is built and started. 
+Then build and start the tracegui web application. 
 
 ```markdown
 npm install
 npm run serve
 ```
 
-```markdown
-
-```
-Finally check the application from the you browser. The initial three parts that exist in the initial contract can be observed.
+Finally check the application from the you browser. The initial three parts that exist in the initial contract can be observed. 
 
 ```markdown
-
+https://wwww.itopp.nl/ORG1
 ```
 
 ## The Scenario
