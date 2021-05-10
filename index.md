@@ -2,11 +2,16 @@
 
 ## Introduction
 
-This is the repository for traceability blockchain prototype. The repository has four folders. Tracegui includes the tracegui application, traceapp includes the traceapi, the contract has the standardparts contract, external includes the code to access the traceapi from another client.
+This is the repository for traceability blockchain prototype. The repository has four folders. 
 
-The installations were tested on Ubuntu server 20.04 with a configuration of 2 GB RAM. It is recommended to start with a fresh instalallation.
+1. Tracegui includes the tracegui application. 
+2. Traceapp includes the traceapi. 
+3. External includes the code to access the traceapi.
+4. The contract has the standardparts contract, 
 
 ## Installation
+
+An example intallation is provided here. The installations were tested on Ubuntu server 20.04 with a configuration of 2 GB RAM. 
 
 The prototype uses the Hyperledger Fabric 1.4. The detailed installation instructions is given in Hyperledger Fabric page(https://hyperledger-fabric.readthedocs.io/en/release-1.4/prereqs.html). First prerequisites, curl, docker, go, node.js and python to be installed.
 
@@ -22,10 +27,12 @@ Ad user for traceability blockchain
 sudo adduser buser
 ```
 Login as buser abd install docker and docker-compose. Add the user to docker group.
+
 ```markdown
 sudo apt-get -y install docker-compose
 sudo usermod -aG docker $USER
 ```
+
 The go programming language is installed and path variable is updated.
 
 ```markdown
@@ -33,10 +40,10 @@ wget -c https://dl.google.com/go/go1.12.17.linux-amd64.tar.gz | sudo tar -xzf
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 ```
-Node.js version 8.9 to be installed as recommended. 
+Node.js is installed as recommended. 
 
 ```markdown
-curl -sL https://deb.nodesource.com/setup_8.9 -o nodesource_setup.sh
+sudo apt-get install nodejs npm
 ```
 
 If you are using older version of linux such as 16.04, then install python 2.7.
@@ -55,8 +62,7 @@ go version
 node -v
 npm -v
 ```
-It is advosed to define an alternative user account for running the blockchain application.
-
+It is advised to define an alternative user account for running the blockchain application.
 
 
 Final step is downloading the Hyperledger Fabric 1.4 and samples.
@@ -84,10 +90,6 @@ echo y | ./byfn.sh up -a -n -s leveldb
 
 3. If you want to add additional peers, create the cyrpto material, paste them and install the chaincode on these.
 
-
-
-
-
 If you are using default port for web requests (https), sign in as root and enable node to access to default ports(80 and 443).
 
 ```markdown
@@ -100,7 +102,6 @@ The prototype has three main components. The traceapi is a node.js application. 
 1. Run the blockchain network and install the standard parts contract.
 2. Run the api server.
 3. Run the client application.
-
 
 For running the blockchain network the first-network example is used as a baseline. The  contract is updated with standardparts(SPgolang.go). Download the fabric samples. Update the contract file in the contract directory. Then update the installation script to run the file.
 
@@ -251,7 +252,7 @@ Dispute transaction is used for dispute management.
 
 ### Use Case 1: Back-to-Birth Trace
 
-You can see the trace of the TRU6 for the M&R organization. It includes every operation the part has gone through from naufacturing. THe TRUIDs and GTINs are preserved through the trace. The CoC informations is only appended.
+You can see the trace of a for the M&R organization. It includes every operation the part has gone through from naufacturing. THe TRUIDs and GTINs are preserved through the trace. The CoC informations is only appended.
 
 
 ### Use Case 2: Dispute Resolution through Consistent/Trusted Common Trace
